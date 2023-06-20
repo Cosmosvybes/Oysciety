@@ -1,11 +1,10 @@
 button {
     padding: 10px 10px;
     border-radius: 4px;
-    width: 300px;
     margin-top: 2px;
-    background-color: green;
-    border: unset;
-    color: lightgrey;
+    border: 1px solid green;
+    color: green;
     font-weight: bolder;
     height: 50px;
+ 
 }

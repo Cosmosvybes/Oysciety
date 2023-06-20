@@ -1,5 +1,6 @@
 import React from 'react'
 import './Nav.css'
+import Button from './Button'
 
 
 const Nav = () => {
@@ -7,10 +8,12 @@ const Nav = () => {
         <>
             <nav>
                 <button type='button' >
-                    <b> Logo </b>
+                    <h1> Logo </h1>
                 </button>
+                <span>
+                    <input type='text' placeholder='search records' required /> <Button value='Get records' width='100px' height='40px' />
+                </span>
 
-                <input type='text' placeholder='search' value='records' />
             </nav>
         </>
     )

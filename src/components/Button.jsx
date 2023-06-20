@@ -1,9 +1,9 @@
 import React from 'react'
 import './Button.css'
-const Button = ({ value }) => {
+const Button = ({ value, width, height, fontSize }) => {
     return (
         <>
-            <button> {value}</button>
+            <button style={{ width: width, height: height, fontSize: fontSize }}> {value}</button>
         </>
     )
 }
