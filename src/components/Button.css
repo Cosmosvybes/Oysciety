@@ -1,0 +1,11 @@
+button {
+    padding: 10px 10px;
+    border-radius: 4px;
+    width: 300px;
+    margin-top: 2px;
+    background-color: green;
+    border: unset;
+    color: lightgrey;
+    font-weight: bolder;
+    height: 50px;
+}

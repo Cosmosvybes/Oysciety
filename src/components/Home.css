@@ -1,0 +1,25 @@
+.admin-board {
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    position: relative;
+    justify-content: space-between;
+}
+
+.menu-bars {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    border-right: 1px solid lightgrey;
+    padding: 10px 10px;
+    width: 300px;
+}
+
+.board {
+    height: 400px;
+    width: 500px;
+    border: 1px solid green;
+}
