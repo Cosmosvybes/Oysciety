@@ -1,19 +1,27 @@
 import React from 'react'
 import './Nav.css'
-import Button from './Button'
+
+import { Link } from 'react-router-dom'
 
 
 const Nav = () => {
     return (
         <>
             <nav>
-                <button type='button' >
-                    <h1> Logo </h1>
-                </button>
-                <span>
-                    <input type='text' placeholder='search records' required /> <Button value='Get records' width='100px' height='40px' />
-                </span>
+                <div className="nav-menu">
+                    <span> Logo </span>
 
+                    <div className='nav-bars'>
+                        <Link className='link'> home </Link >
+                        <Link className='link'> memorandum </Link >
+                        <Link className='link'>  message </Link>
+                    </div>
+                    <div className='nav-bars'>
+                        <Link className='link'> sign up </Link >
+                        <Link className='link'> sign in </Link >
+
+                    </div>
+                </div>
             </nav>
         </>
     )

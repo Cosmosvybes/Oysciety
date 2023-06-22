@@ -1,12 +1,14 @@
-import { Nav, Home } from './components'
+import { Nav, Home, Admin } from './components'
 import './App.css'
 
 
 function App() {
   return (
     <>
-      <Nav />
-      <Home />
+     
+       <Nav />
+      {/* <Home />  */}
+      <Admin />
 
     </>
   )
