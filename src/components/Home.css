@@ -1,194 +1,65 @@
-.landing {
-    display: block;
-    background-color: rgba(211, 211, 211, 0.392);
+.homepage .link {
+  text-decoration: none;
+  background-color: green;
+  color: white;
+  width: 50px;
+  padding: 0px 10px;
 }
 
-.landing button {
-    background-color: none;
-    border: unset;
+.main-page {
+  background-color: lightgray;
+}
+.inbox-outbox {
+  margin-top: 1px;
+  display: flex;
+  justify-content: flex-start;
 }
 
-.signinresponse {
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-
+.inbox-outbox .link {
+  color: green;
+  background-color: inherit;
 }
 
-.introduction {
-    display: flex;
-    height: 900px;
-    justify-content: flex-start;
-    align-items: center;
-
+.inbox-outbox .link:hover,
+.inbox-outbox .link:focus {
+  color: grey;
+  transition: 0.4s;
 }
 
-.introduction-text {
-    position: relative;
-    height: auto;
-    margin-top: -100px;
-    display: block;
-    padding: 10px 10px;
-
+.post-memo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
 }
 
-.introduction-text>h1 {
-    font-size: 24px;
+.post-container {
+  padding: 10px 24px;
+  /* border: 1px solid lightgrey; */
+  width: 500px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.paragraph {
-    width: 600px;
-    height: auto;
-    margin-top: 10px;
-    line-height: 1.5;
-
-
+.post-box {
+  display: block;
 }
 
-.paragraph p {
-    color: black;
-    font-size: 14px;
-}
+@media screen and (max-width: 650px) {
+  .post-container {
+    width: auto;
+  }
 
-.signup-signin {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 10px;
+  .inbox-outbox {
+    padding: 5px 10px;
+    background-color: inherit;
+    color: green;
+    padding: 0px 24px;
+  }
 
-
-}
-
-.signup-signin h2 {
-    color: brown;
-    font-size: 14px;
-}
-
-
-
-.sign-in {
-    display: flex;
-    margin-top: 5px;
-    text-align: center;
-    align-items: center;
-
-
-}
-
-.sign-in p {
-    margin-left: 5px;
-    text-decoration: underline;
-}
-
-.sign-in button {
-    margin-left: 5px;
-    color: brown;
-    border-radius: 5px;
-    padding: 2px 5px;
-    border: none;
-
-
-}
-
-
-
-.login-modal form {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-
-
-}
-
-
-
-
-.login-modal form input {
-    display: flex;
-    height: auto;
-    padding: 10px 0px;
-    margin-left: 5px;
-    border: 1px solid brown;
-    outline: none;
-    margin-top: 5px;
-    border-radius: 5px;
-    width: 200px;
-    text-align: center;
-
-}
-
-.login-modal form button {
-    /* padding: 0px 5px; */
-    background-color: brown;
-    color: white;
-    margin-left: 5px;
-    height: 37px;
-    width: 203px;
-    margin-top: 5px;
-    padding: 10px 0px;
-    border-radius: 5px;
-    border: 1px solid brown;
-
-}
-
-.login>button {
-    padding: 10px 10px;
-    text-align: center;
-    margin-top: 5px;
-    width: 200px;
-}
-
-
-
-
-@media screen and (max-width:650px) {
-    .introduction {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-    }
-
-    .introduction-text {
-        height: auto;
-        margin-top: 50px;
-    }
-
-    .signup-signin {
-        flex-direction: column;
-    }
-
-    input {
-        flex-direction: column;
-        margin-top: 5px;
-        width: 200px;
-        margin-left: none;
-    }
-
-
-    form {
-        flex-direction: column;
-    }
-
-    .paragraph {
-        width: auto;
-
-    }
-
-    .login {
-        flex-direction: column;
-        width: auto;
-    }
-
-    .login-modal form input {
-        width: auto;
-    }
-
-    .login-modal form button {
-        width: auto;
-    }
-
-    .login-modal form {
-        flex-direction: column;
-    }
+  .post-memo {
+    width: auto;
+  }
 }

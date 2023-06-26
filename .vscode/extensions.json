@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "jprestidge.theme-material-theme"
+        "jprestidge.theme-material-theme",
+        "wakatime.vscode-wakatime"
     ]
 }

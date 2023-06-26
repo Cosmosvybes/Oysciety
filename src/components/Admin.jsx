@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
+import Logo from "../assets/Logo_.png";
 import "./Admin.css";
+import "./Message.css";
 import {
   FaChartPie,
   FaChartLine,
@@ -110,8 +112,7 @@ const Admin = () => {
       return;
     }
     const body = {
-      memo: memo,
-      from: sender,
+      body: memo,
       to: reciever,
     };
     console.log(body);
@@ -138,6 +139,7 @@ const Admin = () => {
     setMemolist(memolist.filter((memo) => memo.id !== id));
   };
 
+  //copy Asssitance text
   const copyText = (e) => {
     e.preventDefault();
     window.navigator.clipboard.writeText(assistance);
@@ -146,7 +148,8 @@ const Admin = () => {
   return (
     <>
       {/* <Nav /> */}
-      <section>
+
+      <section style={{ backgroundColor: "lightgrey" }}>
         <div
           className="admin-board"
           style={{
@@ -156,11 +159,11 @@ const Admin = () => {
           }}
         >
           <div className="over-box">
-            <h1 style={{ color: "green" }}> Overview </h1>
+            <h1 style={{ color: "green", textAlign:'center' }}> Overview </h1>
             <div className="overview">
               <div className="info-box">
                 <div className="icon-p">
-                  <FaChartLine style={{ marginTop: "4px" , color:'green'}} />
+                  <FaChartLine style={{ marginTop: "3px", color: "green" }} />
                   <p> Total Data Outward </p>
                 </div>
 
@@ -169,8 +172,8 @@ const Admin = () => {
               </div>
 
               <div className="info-box">
-              <div className="icon-p">
-                  <FaChartLine style={{ marginTop: "4px", color:'green' }} />
+                <div className="icon-p">
+                  <FaChartLine style={{ marginTop: "4px", color: "green" }} />
                   <p> Total Data Inward </p>
                 </div>
                 <h2> 1k </h2>
@@ -244,56 +247,7 @@ const Admin = () => {
           )}
         </div>
 
-        <div className="messages-memo">
-          <div className="message_">
-            <p
-              style={{
-                color: "green",
-                textAlign: "center",
-                textDecoration: "underline",
-              }}
-            >
-              {" "}
-              Sent messages
-            </p>
-            {outbox.map((message) => {
-              return (
-                <div className="container" key={message.id}>
-                  <div className="message">
-                    <p key={message.id}> {message.message}</p>{" "}
-                    <FaSms style={{ color: "green" }} />{" "}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-
         {/* inbox  */}
-        <div className="messages-memo">
-          <div className="message_">
-            <p
-              style={{
-                color: "green",
-                textAlign: "center",
-                textDecoration: "underline",
-              }}
-            >
-              {" "}
-              Recieved messages
-            </p>
-            {outbox.map((message) => {
-              return (
-                <div className="container" key={message.id}>
-                  <div className="message">
-                    <p key={message.id}> {message.message}</p>{" "}
-                    <FaSms style={{ color: "red" }} />{" "}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
 
         {/* input modal for modal and message  */}
         <div
@@ -307,7 +261,7 @@ const Admin = () => {
           <div className="menu-buttons">
             {" "}
             <FaRobot
-              style={{ marginTop: "4px", color: !modal ? "red" : "brown" }}
+              style={{ marginTop: "4px", color: !modal ? "red" : "green" }}
               onClick={() => {
                 setModal(!modal);
               }}
@@ -322,7 +276,7 @@ const Admin = () => {
             </button>
             {modal && (
               <FaSms
-                style={{ marginTop: "5px", color: "brown" }}
+                style={{ marginTop: "5px", color: "green" }}
                 onClick={() => {
                   setMsg(!msg);
                 }}
@@ -344,7 +298,7 @@ const Admin = () => {
           <div className="memo-modal">
             <div className="memo" style={{ height: modal ? "600px" : "0" }}>
               <form>
-                <h1 style={{ color: "brown" }}>
+                <h1 style={{ color: "green" }}>
                   {!msg ? "new memo" : "new message"}{" "}
                 </h1>
                 {!msg && (
@@ -406,7 +360,7 @@ const Admin = () => {
               style={{ height: !modal ? "600px" : "0" }}
             >
               <form>
-                <h1 style={{ color: "brown" }}> Immediate Assistant </h1>
+                <h1 style={{ color: "green" }}> Immediate Assistant </h1>
                 <textarea
                   maxLength={500}
                   placeholder="How can help you ?"

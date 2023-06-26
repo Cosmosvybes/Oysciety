@@ -147,7 +147,7 @@ p {
 
 .memo-message-container button {
   padding: 3px 1px;
-  color: brown;
+  color: green;
   /* position: fixed;
     left: 0;
     top: 0; */
@@ -162,6 +162,8 @@ p {
 .menu-buttons button {
   border: none;
   border-radius: 5px;
+  border: unset;
+  outline: none;
   margin-right: 10px;
 }
 
@@ -195,9 +197,12 @@ p {
   padding: 10px 10px;
   margin-top: 2px;
   width: 300px;
-  border: 1px solid brown;
-  outline: brown;
+  border: 1px solid lightgrey;
+  outline: green;
   border-radius: 4px;
+}
+.memo form h1 {
+  color: green;
 }
 
 .memo form textarea {
@@ -207,15 +212,15 @@ p {
   height: 300px;
   margin-top: 2px;
   width: 300px;
-  border: 1px solid brown;
-  outline: brown;
+  border: 1px solid lightgray;
+  outline: green;
   border-radius: 4px;
 }
 
 .memo form button {
   width: 322px;
   padding: 10px 10px;
-  background-color: brown;
+  background-color: green;
   color: white;
   border: unset;
   margin-top: 2px;
@@ -243,8 +248,8 @@ p {
   padding: 10px 10px;
   margin-top: 2px;
   width: 300px;
-  border: 1px solid brown;
-  outline: brown;
+  border: 1px solid lightgrey;
+  outline: green;
   border-radius: 4px;
 }
 
@@ -255,15 +260,15 @@ p {
   height: 30px;
   margin-top: 2px;
   width: 300px;
-  border: 1px solid brown;
-  outline: brown;
+  border: 1px solid lightgrey;
+  outline: green;
   border-radius: 4px;
 }
 
 .memo-message form button {
   width: 322px;
   padding: 10px 10px;
-  background-color: brown;
+  background-color: green;
   color: white;
   border: unset;
   margin-top: 2px;
