@@ -34,12 +34,12 @@
 .info-box {
   height: auto;
   color: black;
-  width: 300px;
+  width: 180px;
   border: 1px solid grey;
   border-top: 1px solid grey;
   display: block;
   border-radius: 1px;
-  padding: 5px 0px;
+  padding: 5px 24px;
 }
 
 .info-box h1,
