@@ -1,0 +1,194 @@
+.landing {
+    display: block;
+    background-color: rgba(211, 211, 211, 0.392);
+}
+
+.landing button {
+    background-color: none;
+    border: unset;
+}
+
+.signinresponse {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.introduction {
+    display: flex;
+    height: 900px;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.introduction-text {
+    position: relative;
+    height: auto;
+    margin-top: -100px;
+    display: block;
+    padding: 10px 10px;
+
+}
+
+.introduction-text>h1 {
+    font-size: 24px;
+}
+
+.paragraph {
+    width: 600px;
+    height: auto;
+    margin-top: 10px;
+    line-height: 1.5;
+
+
+}
+
+.paragraph p {
+    color: black;
+    font-size: 14px;
+}
+
+.signup-signin {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+
+
+}
+
+.signup-signin h2 {
+    color: brown;
+    font-size: 14px;
+}
+
+
+
+.sign-in {
+    display: flex;
+    margin-top: 5px;
+    text-align: center;
+    align-items: center;
+
+
+}
+
+.sign-in p {
+    margin-left: 5px;
+    text-decoration: underline;
+}
+
+.sign-in button {
+    margin-left: 5px;
+    color: brown;
+    border-radius: 5px;
+    padding: 2px 5px;
+    border: none;
+
+
+}
+
+
+
+.login-modal form {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+
+}
+
+
+
+
+.login-modal form input {
+    display: flex;
+    height: auto;
+    padding: 10px 0px;
+    margin-left: 5px;
+    border: 1px solid brown;
+    outline: none;
+    margin-top: 5px;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+
+}
+
+.login-modal form button {
+    /* padding: 0px 5px; */
+    background-color: brown;
+    color: white;
+    margin-left: 5px;
+    height: 37px;
+    width: 203px;
+    margin-top: 5px;
+    padding: 10px 0px;
+    border-radius: 5px;
+    border: 1px solid brown;
+
+}
+
+.login>button {
+    padding: 10px 10px;
+    text-align: center;
+    margin-top: 5px;
+    width: 200px;
+}
+
+
+
+
+@media screen and (max-width:650px) {
+    .introduction {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .introduction-text {
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .signup-signin {
+        flex-direction: column;
+    }
+
+    input {
+        flex-direction: column;
+        margin-top: 5px;
+        width: 200px;
+        margin-left: none;
+    }
+
+
+    form {
+        flex-direction: column;
+    }
+
+    .paragraph {
+        width: auto;
+
+    }
+
+    .login {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .login-modal form input {
+        width: auto;
+    }
+
+    .login-modal form button {
+        width: auto;
+    }
+
+    .login-modal form {
+        flex-direction: column;
+    }
+}
