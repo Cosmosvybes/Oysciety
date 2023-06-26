@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Admin.css";
 import {
-  FaFacebookMessenger,
+  FaChartPie,
+  FaChartLine,
   FaTrash,
   FaArrowUp,
   FaSms,
@@ -158,13 +159,20 @@ const Admin = () => {
             <h1 style={{ color: "green" }}> Overview </h1>
             <div className="overview">
               <div className="info-box">
-                <p> Total Data Outward </p>
+                <div className="icon-p">
+                  <FaChartLine style={{ marginTop: "4px" , color:'green'}} />
+                  <p> Total Data Outward </p>
+                </div>
+
                 <h2> 1k </h2>
                 <p> Memo sent </p>
               </div>
 
               <div className="info-box">
-                <p> Total Data Inward </p>
+              <div className="icon-p">
+                  <FaChartLine style={{ marginTop: "4px", color:'green' }} />
+                  <p> Total Data Inward </p>
+                </div>
                 <h2> 1k </h2>
                 <p> Message recieved </p>
               </div>

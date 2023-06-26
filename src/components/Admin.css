@@ -4,6 +4,16 @@
   display: block;
 }
 
+.icon-p {
+  display: flex;
+  justify-content: flex-start;
+  padding: 3px 5px;
+  position: relative;
+}
+.icon-p p {
+  margin-left: 5px;
+}
+
 .overview-box {
   display: block;
   position: relative;
